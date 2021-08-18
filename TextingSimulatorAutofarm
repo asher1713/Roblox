@@ -1,0 +1,9 @@
+getgenv().farmer = true;
+
+while wait() do
+    if getgenv().farmer == true then
+        local A_1 = "Phone"
+        local Event = game:GetService("ReplicatedStorage").Events.SendTexts
+        Event:FireServer(A_1)
+    end
+end
